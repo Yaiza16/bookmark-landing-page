@@ -15,20 +15,7 @@ module.exports = {
             {
                 test: /\.html$/i,
                 loader: "html-loader",
-                // options: {
-                //     sources: false
-                // } 
             },
-            // {
-            //     test: /\.(png|jpe?g|gif|svg|webp)$/i,
-            //     loader: 'file-loader',
-            //     options: {
-            //         name: '[name].[ext]',
-            //         outputPath: '/assets/img/',
-            //         pubicPath: 'assets/img/'
-            //     },
-            // },
-
             {
                 test: /\.(jpe?g|png|gif|svg)$/,
                 type: 'asset/resource',
