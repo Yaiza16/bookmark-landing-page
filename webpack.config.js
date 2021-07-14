@@ -24,25 +24,18 @@ module.exports = {
                   }
             },
             {
-                test: /\.s[ac]ss$/i,
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader
-                    },
-                    "css-loader",
-                    "sass-loader"
-                ]
+                test: /\.((c|sc|sa)ss|css)$/,
+                use: ["style-loader", "css-loader", "sass-loader"]
             }
         ]
     },
+
+
     plugins: [
         new HTMLWebpackPlugin({
             template: "./src/index.html",
             filename: "./index.html"
         }),
         new CleanWebpackPlugin(),
-        new MiniCssExtractPlugin({
-            filename: './css/main.css'
-        })
     ]
 }
