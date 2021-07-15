@@ -1,0 +1,62 @@
+@use '../utilities/mixins' as m;
+@use '../utilities/variables' as v;
+@use '../utilities/functions' as f;
+
+.features{
+    @include m.margin-top-sections;
+    @include m.general-padding;
+}
+
+.features-inf{
+    text-align: center;
+    
+    &__title{
+        margin-bottom: 1.5rem;
+    }
+}
+
+.features-options{
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 4.5rem;
+
+    &__item{
+        padding-top: 1rem; padding-bottom: 1rem;
+        border-top: 1px solid v.$c-grayishBlue;
+        font-size: 1.1rem;
+
+        &:last-child{
+            border-bottom: 1px solid v.$c-grayishBlue;
+
+        }
+
+        &--active{
+            position: relative;
+            color: v.$c-veryDarkBlue;
+
+            &::before{
+                content: "";
+                position: absolute;
+                bottom: -1px;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 5px;
+                width: 40%;
+                background-color: v.$c-softRed;
+            }
+        }
+    }
+}
+
+.features-layout{
+    width: 100%;
+}
+
+.features-layout-inf{
+    margin-top: 5.5rem;
+    text-align: center;
+
+    &__title{
+        margin-bottom: 1rem;
+    }
+}

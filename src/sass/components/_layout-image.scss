@@ -1,6 +1,6 @@
 @use '../utilities/variables' as v;
 
-.hero-picture{
+.picture-container{
     width: 100%;
     position: relative;
 
@@ -10,15 +10,30 @@
         position: absolute;
         top: 20%;
         bottom: 0px;
-        right: 0;
-        left: 20%;
-        border-radius: 50% 0 0 50%;
-
         background-color: v.$c-softBlue;
+
+    }
+    
+
+    &--right{
+        &::before{
+            right: 0;
+            left: 20%;
+            border-radius: 50% 0 0 50%;
+            }
+    }
+
+    &--left{
+        &::before{
+            left: -25px;
+            right: 20%;
+            bottom: -40px;
+            border-radius: 0 50% 50% 0;
+        }
     }
 }
 
-.hero-img{
+.picture-img{
     width: 100%;
     z-index: 999;
     object-fit: cover;
