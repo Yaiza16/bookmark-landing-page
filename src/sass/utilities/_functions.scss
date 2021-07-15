@@ -1,0 +1,21 @@
+@use 'sass:color';
+@use 'variables' as v;
+
+
+// Font bold
+@function font-weight($key){
+    $value: map-get(v.$font-bold, $key);
+    @return $value;
+}
+
+//Transform hsl to hsla
+@function hsla-color($color, $alpha){
+    $hue: color.hue($color);
+    $saturation: color.saturation($color);
+    $lightness: color.lightness($color);
+    $value: #{hsla}($hue, $saturation, $lightness, $alpha);
+
+    @return $value;
+
+    
+}

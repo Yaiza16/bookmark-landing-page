@@ -1,0 +1,32 @@
+@use '../utilities/mixins' as m;
+@use '../utilities/variables' as v;
+@use '../utilities/functions' as f;
+
+.header{
+    position: relative;
+}
+
+.header-hero{
+    padding-top: 110px;
+}
+
+.hero-container{
+    width: 100%;
+}
+
+.hero-inf{
+    margin-top: 50px;
+    @include m.general-padding;
+    text-align: center;
+
+    &__title{
+        margin-bottom: 1.5rem;
+    }
+
+    &__buttons{
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+

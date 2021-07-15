@@ -1,5 +1,23 @@
+@use '../utilities/variables' as v;
+@use '../utilities/functions' as f;
+
 *, *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+h1{
+    color: v.$c-veryDarkBlue;
+    font-weight: f.font-weight(bold);
+}
+
+p{
+    color: v.$c-grayishBlue;
+    line-height: 25px;
+}
+
+a{
+    text-decoration: none;
 }

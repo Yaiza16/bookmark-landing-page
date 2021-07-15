@@ -1,0 +1,19 @@
+@use '../utilities/variables' as v;
+@use '../utilities/functions' as f;
+
+.button{
+    display: inline-block;
+    padding: 1rem;
+    background-color: v.$c-softBlue;
+    color: v.$c-white;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px f.hsla-color(v.$c-softBlue, .25);
+
+
+    &--secundary{
+        background-color: v.$c-softGrayishBlue;
+        font-weight: f.font-weight(bold);
+        color: v.$c-darkGrayishBlue;
+
+    }
+}

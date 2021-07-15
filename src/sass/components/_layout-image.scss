@@ -1,0 +1,27 @@
+@use '../utilities/variables' as v;
+
+.hero-picture{
+    width: 100%;
+    position: relative;
+
+    &::before{
+        content: "";
+        display: inline;
+        position: absolute;
+        top: 20%;
+        bottom: 0px;
+        right: 0;
+        left: 20%;
+        border-radius: 50% 0 0 50%;
+
+        background-color: v.$c-softBlue;
+    }
+}
+
+.hero-img{
+    width: 100%;
+    z-index: 999;
+    object-fit: cover;
+    display: inline-block;
+    position: relative;
+}

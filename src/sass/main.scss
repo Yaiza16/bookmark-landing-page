@@ -1,1 +1,9 @@
-@import 'layout/main';
+@import 'base/resets';
+@import 'base/typography';
+
+@import 'components/nav';
+@import 'components/layout-image';
+@import 'components/button';
+
+@import 'layout/header';
+
