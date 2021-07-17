@@ -27,7 +27,18 @@
 
         &:last-child{
             border-bottom: 1px solid v.$c-grayishBlue;
+        }
 
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 5px;
+            width: 0;
+            background-color: v.$c-softRed;
+            transition: width .3s ease-out;
         }
 
         &--active{
@@ -35,14 +46,7 @@
             color: v.$c-veryDarkBlue;
 
             &::before{
-                content: "";
-                position: absolute;
-                bottom: -1px;
-                left: 50%;
-                transform: translateX(-50%);
-                height: 5px;
                 width: 40%;
-                background-color: v.$c-softRed;
             }
         }
     }
@@ -58,5 +62,44 @@
 
     &__title{
         margin-bottom: 1rem;
+
+        &--zoomOut{
+            @include m.animation-zoomOut;
+            animation: animation-zoomOut 1s;
+        }
+
+        &--zoomIn{
+            @include m.animation-zoomIn;
+            animation: animation-zoomIn 1s;
+        }
+    }
+
+
+
+    &__desc{
+        &--fadeOut{
+            @include m.animation-fadeOut;
+            animation: animation-fadeOut 1s;
+        }
+
+        &--fadeIn{
+            @include m.animation-fadeIn;
+            animation: animation-fadeIn 1s;
+        }
+          
+    }
+}
+
+.features-img{
+    display: none;
+    // position: absolute;
+
+    &--active{
+        display: inline;
+    }
+
+    &--moveOut{
+            @include m.animation-mixin(moveOut);
+            animation: moveOut 1.5s;
     }
 }

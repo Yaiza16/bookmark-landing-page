@@ -6,3 +6,67 @@
 @mixin margin-top-sections{
     margin-top: 160px;
 }
+
+// ****************
+// ANIMATIONS
+// ****************
+
+@mixin animation-mixin($name) {
+    @keyframes #{$name} {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        } 
+        
+        to {
+            transform: translateX(-80%);
+            opacity: .2;
+        }
+    }
+}
+
+@mixin animation-zoomOut{
+    @keyframes animation-zoomOut{
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(0);
+        }
+    }
+}
+
+@mixin animation-zoomIn{
+    @keyframes animation-zoomIn{
+        from{
+            transform: scale(0);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
+}
+
+@mixin animation-fadeOut{
+    @keyframes animation-fadeOut{
+        from{
+            opacity: 1;
+        }
+
+        to{
+            opacity: .2;
+        }
+    }
+}
+
+@mixin animation-fadeIn{
+    @keyframes animation-fadeIn{
+        from{
+            opacity: .2;
+        }
+
+        to{
+            opacity: 1;
+        }
+    }
+}

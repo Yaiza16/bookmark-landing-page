@@ -4,16 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">  
   <title>Frontend Mentor | Bookmark landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
-  <img src="assets/images/icon-error.svg" alt="">
+  <main class="app">
+    <header class="header">
+      <div class="header-container">
+        <nav class="nav">
+          <div class="nav-container">
+            <a href="#" class="logo"><img src="./assets/images/logo-bookmark.svg" alt="logo-site" class="logo-img"></a>
+            <div class="hamburger">
+              <span class="hamburger__line"></span>
+              <span class="hamburger__line"></span>
+              <span class="hamburger__line"></span>
+            </div>
+          </div>
+        </nav>
 
-  Features
+        <div class="header-hero">
+          <div class="hero-container">
+            <div class="picture-container picture-container--right hero-picture">
+              <img src="./assets/images/illustration-hero.svg" alt="hero-img" class="picture-img hero-img">
+            </div>
+            <div class="hero-inf">
+              <h1 class="hero-inf__title">A Simple Bookmark Manager</h1>
+              <p class="hero-inf__desc">A clean and simple interface to organize your favourite websites. Open a new 
+                browser tab and see your sites load instantly. Try it for free.</p>
+              <div class="hero-inf__buttons">
+                <a href="#" class="button">Get it on Chrome</a>
+                <a href="#" class="button button--secundary">Get it on Firefox</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="features">
+      <div class="features-container">
+        <div class="features-inf">
+          <h2 class="features-inf__title">Features</h2>
+          <p class="features-inf__desc">Our aim is to make it quick and easy for you to access your favourite websites. 
+            Your bookmarks sync between your devices so you can access them on the go.</p>
+        </div>
+
+        <div class="features-options" id="features-options">
+          <p class="features-options__item features-options__item--active" data-index="1" >Simple Bookmarking</p>
+          <p class="features-options__item" data-index="2">Speedy Searching</p>
+          <p class="features-options__item" data-index="3">Easy Sharing</p>
+        </div>
+
+        <div class="features-layout">
+          <div class="picture-container picture-container--features picture-container--left features-picture">
+            <img src="./assets/images/illustration-features-tab-1.svg" alt="illustration-features" class="picture-img features-img features-img--active" data-index="1">
+            <img src="./assets/images/illustration-features-tab-2.svg" alt="illustration-features" class="picture-img features-img" data-index="2">
+            <img src="./assets/images/illustration-features-tab-3.svg" alt="illustration-features" class="picture-img features-img" data-index="3">
+          </div>
+          <div class="features-layout-inf"> 
+            <h2 class="features-layout-inf__title" id="title-container">Bookmark in one click</h2>
+            <!-- <h2 class="features-layout-inf__title">Intelligent search</h2>
+            <h2 class="features-layout-inf__title">Share your bookmarks</h2> -->
+
+            <p class="features-layout-inf__desc" id="description-container">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+              gives you complete control over how you manage your favourite sites.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Features
   Pricing
   Contact
   Login
@@ -76,40 +139,40 @@
   Frequently Asked Questions
   
   Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us.
+  answered please feel free to email us. -->
 
   <!-- Question 1 -->
-  What is Bookmark?
+  <!-- What is Bookmark? -->
 
   <!-- Answer 1 -->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+  <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis. -->
 
   <!-- Question 2 -->
-  How can I request a new browser?
+  <!-- How can I request a new browser? -->
 
   <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+  <!-- Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
   Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
   ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. -->
 
   <!-- Question 3 -->
-  Is there a mobile app?
+  <!-- Is there a mobile app? -->
 
   <!-- Answer 3 -->
-  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+  <!-- Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
   urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum.
+  sollicitudin ex et ultricies bibendum. -->
 
   <!-- Question 4 -->
-  What about other Chromium browsers?
+  <!-- What about other Chromium browsers? -->
 
   <!-- Answer 4 -->
-  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit.
+  <!-- Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+  vitae neque eget nisl gravida pellentesque non ut velit. -->
 
-  More Info
+  <!-- More Info
 
   35,000+ already joined
 
@@ -119,7 +182,7 @@
 
   Features
   Pricing
-  Contact
+  Contact -->
 
 </body>
 </html>
