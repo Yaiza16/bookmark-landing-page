@@ -5,15 +5,28 @@
     display: inline-block;
     padding: 1rem;
     background-color: v.$c-softBlue;
+    border: 2px solid transparent;
     color: v.$c-white;
     border-radius: 5px;
     box-shadow: 0px 5px 5px f.hsla-color(v.$c-softBlue, .25);
+    transition: all .2s ease-in;
+
+    &:hover{
+        border-color: v.$c-softBlue;
+        color: v.$c-softBlue;
+        background-color: v.$c-white;
+    }
 
 
     &--secundary{
         background-color: v.$c-softGrayishBlue;
-        // font-weight: f.font-weight(bold);
         color: v.$c-darkGrayishBlue;
+
+        &:hover{
+            background-color: v.$c-white;
+            color: v.$c-darkGrayishBlue;
+            border-color: v.$c-darkGrayishBlue;
+        }
 
     }
 }

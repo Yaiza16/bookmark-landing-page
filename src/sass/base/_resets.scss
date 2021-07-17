@@ -18,6 +18,11 @@ h2{
     font-weight: f.font-weight(bold);
 }
 
+h3{
+    color: v.$c-veryDarkBlue;
+    font-weight: f.font-weight(bold);
+}
+
 p{
     color: v.$c-grayishBlue;
     line-height: 25px;

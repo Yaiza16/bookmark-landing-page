@@ -1,0 +1,27 @@
+@use '../utilities/mixins' as m;
+@use '../utilities/variables' as v;
+@use '../utilities/functions' as f;
+
+.extension{
+    @include m.margin-top-sections;
+    @include m.general-padding;
+}
+
+.extension-inf{
+    text-align: center;
+
+    &__title{
+        margin-bottom: 1.5rem;
+    }
+
+    &__desc{
+        margin-bottom: 1.5rem;
+    }
+}
+
+.extension-cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
