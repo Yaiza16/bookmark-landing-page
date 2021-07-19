@@ -1,7 +1,6 @@
 const path = require('path');
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin }= require("clean-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry: {
@@ -23,10 +22,39 @@ module.exports = {
                     filename: 'img/[name][ext][query]'
                   }
             },
+
+            {
+                test: /\.(ttf|eot|woff|woff2)$/,
+                type: "asset/resource",
+                generator: {
+                    filename: 'fonts/[name][ext][query]'
+                  }
+              },
+
+
             {
                 test: /\.((c|sc|sa)ss|css)$/,
-                use: ["style-loader", "css-loader", "sass-loader"]
-            }
+                use: [
+                    {
+                        loader: "style-loader"
+                    },
+
+                    {
+                        loader: "css-loader"
+                    },
+                    {
+                        loader: "resolve-url-loader" // This loader solve sass urls problems
+                    },
+                    {
+                        loader: "sass-loader",
+                        options: {
+                            sourceMap: true, // This is required in order to make urls (vendors/iconmoon) work.
+
+                          }
+                    },
+                ]
+            },
+            
         ]
     },
 
