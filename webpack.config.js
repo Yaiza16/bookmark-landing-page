@@ -17,17 +17,27 @@ module.exports = {
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/,
+                // dependency: { 
+                //     not: [
+                //         './src/assets/fonts/icomoon.svg'
+                //     ] 
+                // },
                 type: 'asset/resource',
                 generator: {
-                    filename: 'img/[name][ext][query]'
+                    filename: 'assets/[name][ext][query]'
                   }
             },
 
             {
                 test: /\.(ttf|eot|woff|woff2)$/,
+                // dependency: { 
+                //     not: [
+                //         './src/assets/images'
+                //     ] 
+                // },
                 type: "asset/resource",
                 generator: {
-                    filename: 'fonts/[name][ext][query]'
+                    filename: 'assets/[name][ext][query]'
                   }
               },
 
