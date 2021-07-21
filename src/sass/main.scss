@@ -1,6 +1,8 @@
 @import 'base/resets';
 @import 'base/typography';
 
+@import 'vendors/iconmoon';
+
 @import 'components/nav';
 @import 'components/layout-image';
 @import 'components/button';
@@ -8,4 +10,5 @@
 
 @import 'layout/header';
 @import 'layout/features';
-@import 'layout/extension'
+@import 'layout/extension';
+@import 'layout/faqs';

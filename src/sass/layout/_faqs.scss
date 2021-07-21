@@ -1,0 +1,77 @@
+@use '../utilities/mixins' as m;
+@use '../utilities/variables' as v;
+@use '../utilities/functions' as f;
+
+.faq{
+    @include m.margin-top-sections;
+    @include m.general-padding;
+}
+
+.faq-inf{
+    text-align: center;
+
+    &__title{
+        margin-bottom: 1.5rem;
+    }
+
+    &__desc{
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+
+.faq-question-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 0;
+    border-bottom: 1px solid f.hsla-color(v.$c-grayishBlue, .7);
+    border-top: 1px solid f.hsla-color(v.$c-grayishBlue, .7);
+}
+
+.faq-question:first-of-type{
+
+    & .faq-question-header{
+        border-top: none;
+    }
+}
+
+.faq-question-title{
+    color: v.$c-veryDarkBlue;
+    font-weight: f.font-weight(medium);
+}
+
+.icon-arrow{
+    font-size: 1.7rem;
+    transform: rotate(180deg);
+    color: v.$c-softBlue;
+    
+
+    &--active{
+        color: v.$c-softRed;
+        @include m.animation-arrowOpen;
+        animation: animation-arrowOpen 1s backwards;
+        transform: rotate(0deg);
+    }
+}
+
+.faq-question-answer{
+    height: 0;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    transform-origin: top;
+
+    &--active{
+        padding: 1rem 0;
+        height: auto;
+        overflow: unset;
+    }
+}
+
+.faq-button-container{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
