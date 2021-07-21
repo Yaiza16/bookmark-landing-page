@@ -1,0 +1,41 @@
+@use '../utilities/mixins' as m;
+@use '../utilities/variables' as v;
+@use '../utilities/functions' as f;
+
+.newsletter{
+    @include m.margin-top-sections;
+    @include m.general-padding;
+    padding-top: 4rem; padding-bottom: 2rem;
+    background-color: v.$c-softBlue;
+}
+
+.newsletter-inf{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: .5rem;
+
+    &__desc{
+        text-transform: uppercase;
+        color: v.$c-white;
+        letter-spacing: .3rem;
+        font-size: .8rem;
+    }
+
+    &__title{
+        color: v.$c-white;
+    }
+}
+
+.newsletter-button-container{
+    margin-top: 2.5rem;
+}
+
+.newsletter-button{
+    width: 100%;
+    text-align: center;
+    background-color: v.$c-softRed;
+    color: v.$c-white;
+}

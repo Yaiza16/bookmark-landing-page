@@ -1,0 +1,85 @@
+@use '../utilities/variables' as v;
+
+.form-newsletter{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.form-container{
+    position: relative;
+}
+
+.icon-notification{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    border-radius: 1rem;
+    visibility: hidden;
+
+    &--invalid{
+        visibility: visible;
+        color: v.$c-white;
+        background-color: v.$c-softRed;
+    }
+}
+
+.form-input{
+    width: 100%;
+    padding: .8rem 1rem;
+    border-radius: .2rem .2rem 0 0;
+    border: 3px solid transparent;
+    outline: none;
+    color: v.$c-veryDarkBlue;
+
+    &:focus{
+        border-color: v.$c-grayishBlue;
+    }
+
+    &::placeholder{
+        color: v.$c-grayishBlue;
+        font-family: v.$font-family;
+        border-radius: .2rem;
+    }
+
+    &--invalid{
+        border: 3px solid v.$c-softRed;
+        // color: v.$c-softRed;
+
+        &:focus{
+            border-color: v.$c-softRed;
+        }
+    }
+
+    &--valid{
+        border: 3px solid v.$c-green;
+
+        &:focus{
+            border-color: v.$c-green;
+        }
+    }
+}
+
+.form-error-message{
+    background-color: v.$c-softRed;
+    font-size: .7rem;
+    font-style: italic;
+    float: left;
+    width: 100%;
+    border-radius: 0 0 .2rem .2rem;
+    border: 1px solid v.$c-softRed;
+    padding: .3rem .5rem;
+    color: v.$c-white;
+
+    &--hidden{
+        visibility: hidden;
+    }
+
+    &--valid{
+        background-color: v.$c-green;
+        border-color: v.$c-green;
+    }
+
+    &--invalid{
+        color: v.$c-white;
+    }
+}
