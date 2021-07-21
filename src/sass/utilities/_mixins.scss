@@ -87,3 +87,30 @@
         }
     }
 }
+
+
+@mixin animation-openHeader {
+    @keyframes animation-openHeader {
+        from {
+          transform: translateY(-100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+    
+}
+
+@mixin animation-openMenu{
+    @keyframes animation-openMenu {
+        from {
+          transform: translateY(-100%);
+          opacity: .2;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    
+}

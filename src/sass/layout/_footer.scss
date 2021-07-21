@@ -1,0 +1,67 @@
+@use '../utilities/mixins' as m;
+@use '../utilities/variables' as v;
+@use '../utilities/functions' as f;
+
+.footer{
+    @include m.general-padding;
+    padding-top: 2rem; padding-bottom: 2rem;
+    background-color: v.$c-veryDarkBlue;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    cursor: pointer;
+
+    &__item{
+        color: v.$c-white;
+        transition: all .3s ease-in;
+
+        &:hover{
+            color: v.$c-softRed;
+        }
+
+
+    }
+}
+
+.footer-logo{
+
+    & svg>g>path{
+        fill: v.$c-white;
+    }
+}
+
+.footer-social-icons{
+    display: flex;
+    gap: 2rem;
+
+    &__item{
+        font-size: 1.5rem;
+        color: v.$c-white;
+        transition: all .3s ease-in;
+
+        &:hover{
+            color: v.$c-softRed;
+        }
+    }
+}

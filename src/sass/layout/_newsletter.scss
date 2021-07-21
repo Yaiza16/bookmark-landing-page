@@ -38,4 +38,11 @@
     text-align: center;
     background-color: v.$c-softRed;
     color: v.$c-white;
+    transition: all .3s ease-in;
+
+    &:hover{
+        background-color: v.$c-white;
+        border-color: v.$c-softRed;
+        color: v.$c-softRed;
+    }
 }

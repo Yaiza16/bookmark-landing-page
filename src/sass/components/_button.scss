@@ -3,7 +3,7 @@
 
 .button{
     display: inline-block;
-    padding: 1rem;
+    padding: .8rem;
     background-color: v.$c-softBlue;
     border: 2px solid transparent;
     color: v.$c-white;
@@ -28,5 +28,11 @@
             border-color: v.$c-darkGrayishBlue;
         }
 
+    }
+
+    &--login{
+        background-color: transparent;
+        border-color: v.$c-white;
+        color: v.$c-white;
     }
 }

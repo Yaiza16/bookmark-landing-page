@@ -6,20 +6,38 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">  
   <title>Frontend Mentor | Bookmark landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
-  <main class="app">
-    <header class="header">
+  <main class="app" id="app">
+    <header class="header" id="header">
       <div class="header-container">
-        <nav class="nav">
+        <nav class="nav" id="nav">
           <div class="nav-container">
             <a href="#" class="logo"><img src="./assets/images/logo-bookmark.svg" alt="logo-site" class="logo-img"></a>
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
               <span class="hamburger__line"></span>
               <span class="hamburger__line"></span>
               <span class="hamburger__line"></span>
+            </div>
+          </div>
+
+          <div class="nav-menu">
+            <div class="nav-menu-main">
+              <ul class="nav-menu__items">
+                <li class="nav-menu__item"><a href="" class="nav-menu__link">Features</a></li>
+                <li class="nav-menu__item"><a href="" class="nav-menu__link">Pricing</a></li>
+                <li class="nav-menu__item"><a href="" class="nav-menu__link">Contact</a></li>
+              </ul>
+              <div class="button-container">
+                <a href="#" class="button button--login">Login</a>
+              </div>
+            </div>
+
+            
+
+            <div class="nav-menu-icons">
+              <a href="#" class="nav-menu-icons__item"><i class="icon-facebook"></i></a>
+              <a href="#" class="nav-menu-icons__item"><i class="icon-twitter"></i></a>
             </div>
           </div>
         </nav>
@@ -43,7 +61,7 @@
       </div>
     </header>
 
-    <section class="features">
+    <section class="features" id="features">
       <div class="features-container">
         <div class="features-inf">
           <h2 class="features-inf__title">Features</h2>
@@ -199,56 +217,48 @@
         </div>
       </div>
     </section>
-  </main>
 
-  <!-- 
-  Frequently Asked Questions
+    <section class="newsletter">
+      <div class="newsletter-container">
+        <div class="newsletter-inf">
+          <p class="newsletter-inf__desc">35,000+ already joined</p>
+          <h2 class="newsletter-inf__title">Stay up-to-date with what we’re doing</h2>
+        </div>
+
+        <div class="newsletter-form">
+          <div class="form-container">
+            <form class="form-newsletter" id="form">
+              <input type="text" class="form-input" placeholder="Enter your email address" id="email">
+            </form>
+            <i class="icon-notification" id="alert"></i>
+            <span class="form-error-message form-error-message--hidden" id="error-message">Whoops, make sure it's an email</span>
+          </div>
   
-  Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us. -->
+            <div class="newsletter-button-container">
+              <a href="#" class="button newsletter-button">Contact us</a>
+            </div>
+        </div>  
+      </div>
+    </section>
 
-  <!-- Question 1 -->
-  <!-- What is Bookmark? -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-nav">
+          <a href="#" class="logo footer-logo"><img src="./assets/images/logo-bookmark-footer.svg" alt="logo-site" class="logo-img"></a>
 
-  <!-- Answer 1 -->
-  <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis. -->
+          <ul class="footer-links">
+            <li class="footer-links__item">Features</li>
+            <li class="footer-links__item">Pricing</li>
+            <li class="footer-links__item">Contact</li>
+          </ul>
+        </div>
 
-  <!-- Question 2 -->
-  <!-- How can I request a new browser? -->
-
-  <!-- Answer 2 -->
-  <!-- Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. -->
-
-  <!-- Question 3 -->
-  <!-- Is there a mobile app? -->
-
-  <!-- Answer 3 -->
-  <!-- Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum. -->
-
-  <!-- Question 4 -->
-  <!-- What about other Chromium browsers? -->
-
-  <!-- Answer 4 -->
-  <!-- Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit. -->
-
-  <!-- More Info
-
-  35,000+ already joined
-
-  Stay up-to-date with what we’re doing
-
-  Contact Us
-
-  Features
-  Pricing
-  Contact -->
-
+        <div class="footer-social-icons">
+          <a href="#" class="footer-social-icons__item"><i class="icon-facebook"></i></a>
+          <a href="#" class="footer-social-icons__item"><i class="icon-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
