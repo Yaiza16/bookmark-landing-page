@@ -1,8 +1,13 @@
 @use '../utilities/variables' as v;
+@use '../utilities/mixins' as m;
+
 
 .picture-container{
     width: 100%;
     position: relative;
+    opacity: 0;
+    @include m.animation-loadedPage-headerImage;
+    animation: animation-loadedPage-headerImage 1.5s .5s forwards; //First duration, second delay
 
     &::before{
         content: "";

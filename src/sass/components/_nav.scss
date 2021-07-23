@@ -9,6 +9,8 @@
     width: 100%;
     position: absolute;
     z-index: 1000;
+    @include m.animation-loadedPage-nav;
+    animation: animation-loadedPage-nav 1s;
 
     &--scrolled{
         padding-top: 1rem; padding-bottom: 1rem;

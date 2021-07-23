@@ -21,12 +21,24 @@
 
     &__title{
         margin-bottom: 1.5rem;
+        opacity: 0;
+        @include m.animation-loadedPage-headerTitle;
+        animation: animation-loadedPage-headerTitle 1s .5s forwards;
+    }
+
+    &__desc{
+        opacity: 0;
+        @include m.animation-loadedPage-headerDesc;
+        animation: animation-loadedPage-headerDesc 1s .5s forwards;
     }
 
     &__buttons{
+        opacity: 0;
         margin-top: 1.5rem;
         display: flex;
         justify-content: space-between;
+        @include m.animation-loadedPage-headerImage;
+        animation: animation-loadedPage-headerImage 1.5s .5s forwards; 
     }
 }
 
