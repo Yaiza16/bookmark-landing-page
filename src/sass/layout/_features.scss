@@ -65,12 +65,12 @@
 
         &--zoomOut{
             @include m.animation-zoomOut;
-            animation: animation-zoomOut 1s;
+            animation: animation-zoomOut 1.4s;
         }
 
         &--zoomIn{
             @include m.animation-zoomIn;
-            animation: animation-zoomIn 1s;
+            animation: animation-zoomIn 1.4s;
         }
     }
 
@@ -79,12 +79,12 @@
     &__desc{
         &--fadeOut{
             @include m.animation-fadeOut;
-            animation: animation-fadeOut 1s;
+            animation: animation-fadeOut 1.4s;
         }
 
         &--fadeIn{
             @include m.animation-fadeIn;
-            animation: animation-fadeIn 1s;
+            animation: animation-fadeIn 1.4s;
         }
           
     }
@@ -92,14 +92,16 @@
 
 .features-img{
     display: none;
-    // position: absolute;
+
 
     &--active{
         display: inline;
+        @include m.animation-moveIn;
+        animation: animation-moveIn 1.5s forwards;
     }
-
+   
     &--moveOut{
             @include m.animation-mixin(moveOut);
-            animation: moveOut 1.5s;
+            animation: moveOut 1.5s forwards;
     }
 }

@@ -5,7 +5,7 @@ import validateEmail from './js/validateEmail';
 import navIntersection from './js/navIntersection';
 import menuToggle from './js/menuOpen';
 
-imagesToggle()
+imagesToggle();
 dropDownFaq();
 validateEmail();
 navIntersection();

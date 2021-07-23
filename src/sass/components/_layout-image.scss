@@ -39,4 +39,15 @@
     object-fit: cover;
     display: inline-block;
     position: relative;
+
+    &::before{
+        content: "";
+        display: inline;
+        position: absolute;
+        top: 20%;
+        bottom: 0px;
+        background-color: v.$c-softBlue;
+
+    }
 }
+

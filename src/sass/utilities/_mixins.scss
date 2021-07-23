@@ -20,7 +20,21 @@
         
         to {
             transform: translateX(-80%);
+            opacity: 0;
+        }
+    }
+}
+
+@mixin animation-moveIn {
+    @keyframes animation-moveIn {
+        from {
+            transform: translateX(-100%);
             opacity: .2;
+        } 
+        
+        to {
+            transform: translateX(0%);
+            opacity: 1;
         }
     }
 }
