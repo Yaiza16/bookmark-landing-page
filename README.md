@@ -36,3 +36,6 @@ For this challenge you'll need to:
 - Webpack
 
 ### Highlights / Features
+   - First time using `Webpack`. Probably there are some mistakes with the related files. I’ve been struggling a lot with that so probably it is not the most efficient way to do it. 
+   - I added some animation to the header when site is loaded.
+   - I added a sticky nav bar. I used `Intersection Observer API` to do it.
