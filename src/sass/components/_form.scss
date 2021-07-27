@@ -52,7 +52,6 @@
 
     &--invalid{
         border: 3px solid v.$c-softRed;
-        // color: v.$c-softRed;
 
         &:focus{
             border-color: v.$c-softRed;

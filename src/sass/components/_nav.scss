@@ -91,7 +91,6 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                // gap: 3rem;
                 width: 100%;
                 text-align: center;
             }
@@ -131,8 +130,6 @@
 
             &__link{
                 color: v.$c-white;
-                // text-transform: uppercase;
-                // font-size: 1.2rem;
 
             }
         }
@@ -209,7 +206,6 @@
         text-transform: uppercase;
         letter-spacing: .1rem;
 
-        // font-size: 1rem;
         color: v.$c-veryDarkBlue;
         transition: all .3s ease;
 
