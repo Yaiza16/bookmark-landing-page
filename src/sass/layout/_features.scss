@@ -123,6 +123,11 @@
     margin-top: 5.5rem;
     text-align: center;
 
+    @include m.mq(sm){
+        width: 60%;
+        margin: 5.5rem auto 0;
+    }
+
     @include m.mq(md){
         margin-top: unset;
         text-align: left;
