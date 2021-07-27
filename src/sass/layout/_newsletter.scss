@@ -17,7 +17,7 @@
 }
 
 .newsletter-container{
-    max-width: f.toRem(550);
+    max-width: f.toRem(650);
 
     @include m.mq(sm){
         max-width: f.toRem(375);
@@ -25,6 +25,7 @@
 }
 
 .newsletter-inf{
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
