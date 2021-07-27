@@ -41,6 +41,7 @@
         padding-top: 1rem; padding-bottom: 1rem;
         border-top: 1px solid v.$c-grayishBlue;
         font-size: 1.1rem;
+        cursor: pointer;
 
         @include m.mq(md){
             border: none;
@@ -63,7 +64,7 @@
             height: 5px;
             width: 0;
             background-color: v.$c-softRed;
-            transition: width .3s ease-out;
+            // transition: width .3s ease-out;
 
             @include m.mq(md){
                 border: none;
@@ -76,6 +77,8 @@
 
             &::before{
                 width: 40%;
+                transition: width .3s ease-out;
+
                 @include m.mq(md){
                     width: 100%;
                 }
