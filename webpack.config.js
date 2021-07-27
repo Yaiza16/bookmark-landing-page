@@ -14,6 +14,12 @@ module.exports = {
             {
                 test: /\.html$/i,
                 loader: "html-loader",
+                options: {
+                    minimize: {
+                        sortAttributes: true
+                    }
+                  }
+              
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/,
