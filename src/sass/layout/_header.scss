@@ -12,12 +12,24 @@
 
 .hero-container{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include m.mq(sm){
+        flex-direction: row;
+    }
 }
 
 .hero-inf{
     margin-top: 50px;
     @include m.general-padding;
     text-align: center;
+
+    @include m.mq(sm){
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
 
     &__title{
         margin-bottom: 1.5rem;
@@ -36,9 +48,14 @@
         opacity: 0;
         margin-top: 1.5rem;
         display: flex;
-        justify-content: space-between;
+        justify-content:center;
+        gap: 1rem;
         @include m.animation-loadedPage-headerImage;
         animation: animation-loadedPage-headerImage 1.5s .5s forwards; 
+
+        @include m.mq(sm){
+            justify-content: left;
+        }
     }
 }
 

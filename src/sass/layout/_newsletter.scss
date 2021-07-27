@@ -7,6 +7,21 @@
     @include m.general-padding;
     padding-top: 4rem; padding-bottom: 2rem;
     background-color: v.$c-softBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include m.mq(sm){
+        padding-bottom: 4rem;
+    }
+}
+
+.newsletter-container{
+    max-width: f.toRem(550);
+
+    @include m.mq(sm){
+        max-width: f.toRem(375);
+    }
 }
 
 .newsletter-inf{
@@ -29,8 +44,22 @@
     }
 }
 
+.newsletter-form{
+    @include m.mq(sm){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+        
+    }
+}
+
 .newsletter-button-container{
     margin-top: 2.5rem;
+
+    @include m.mq(sm){
+        margin-top: unset;
+    }
 }
 
 .newsletter-button{

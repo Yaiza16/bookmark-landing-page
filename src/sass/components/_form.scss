@@ -1,8 +1,17 @@
 @use '../utilities/variables' as v;
+@use '../utilities/mixins' as m;
+@use '../utilities/functions' as f;
+
 
 .form-newsletter{
     margin-top: 2rem;
     width: 100%;
+
+    @include m.mq(sm){
+        margin-top: unset;
+        height: auto;
+        min-width: f.toRem(240)
+    }
 }
 
 .form-container{
@@ -69,6 +78,10 @@
     border: 1px solid v.$c-softRed;
     padding: .3rem .5rem;
     color: v.$c-white;
+
+    @include m.mq(sm){
+        display: none;
+    }
 
     &--hidden{
         visibility: hidden;

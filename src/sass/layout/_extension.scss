@@ -9,6 +9,9 @@
 
 .extension-inf{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__title{
         margin-bottom: 1.5rem;
@@ -16,6 +19,13 @@
 
     &__desc{
         margin-bottom: 1.5rem;
+        @include m.mq(sm){
+            width: 65%;
+        }
+
+        @include m.mq(lg){
+            width: 40%;
+        }
     }
 }
 
@@ -24,4 +34,12 @@
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+
+    @include m.mq(sm){
+        flex-direction: row;
+        height: f.toRem(435);
+        align-items: center;
+        justify-content: center;
+    }
+
 }

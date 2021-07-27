@@ -1,5 +1,14 @@
 @use 'sass:color';
+@use 'sass:math';
 @use 'variables' as v;
+
+
+
+//From px to REM
+@function toRem($value) {
+    $remValue: math.div($value, 16) + rem; 
+    @return $remValue;
+}
 
 
 // Font bold
@@ -15,7 +24,5 @@
     $lightness: color.lightness($color);
     $value: #{hsla}($hue, $saturation, $lightness, $alpha);
 
-    @return $value;
-
-    
+    @return $value;   
 }

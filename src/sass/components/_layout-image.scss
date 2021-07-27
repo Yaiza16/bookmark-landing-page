@@ -1,9 +1,12 @@
 @use '../utilities/variables' as v;
 @use '../utilities/mixins' as m;
+@use '../utilities/functions' as f;
+
 
 
 .picture-container{
     width: 100%;
+    max-width: f.toRem(550);
     position: relative;
     opacity: 0;
     @include m.animation-loadedPage-headerImage;
@@ -21,6 +24,12 @@
     
 
     &--right{
+        align-self: flex-end;
+
+        @include m.mq(sm){
+            order: 2;
+            min-width: 50%;
+        }
         &::before{
             right: 0;
             left: 20%;

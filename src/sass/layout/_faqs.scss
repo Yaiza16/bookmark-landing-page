@@ -5,6 +5,13 @@
 .faq{
     @include m.margin-top-sections;
     @include m.general-padding;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-container{
+    max-width: f.toRem(500);
 }
 
 .faq-inf{

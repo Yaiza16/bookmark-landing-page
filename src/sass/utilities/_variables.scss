@@ -19,3 +19,13 @@ $c-softGrayishBlue: hsl(240, 14%, 95%);
 $c-softRed: hsl(0, 94%, 66%);
 $c-white: hsl(0, 0%, 100%);
 $c-green: hsl(125, 61%, 43%);
+
+// ****************
+// BREAKPOINTS
+// ****************
+
+$media-query: (
+    'lg': 1150px,
+    'md': 900px,
+    'sm': 750px
+)

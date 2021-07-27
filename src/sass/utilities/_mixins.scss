@@ -1,11 +1,29 @@
+@use 'variables' as v;
+@use 'functions' as f;
+
 @mixin general-padding{
     padding-left: 25px;
     padding-right: 25px;
+
+    @include mq(lg){
+        padding-left: f.toRem(120);
+        padding-right: f.toRem(120);
+    }
 }
 
 @mixin margin-top-sections{
     margin-top: 160px;
 }
+
+
+@mixin mq($key){
+    $size: map-get(v.$media-query, $key);
+
+    @media only screen and (min-width: $size){
+        @content;
+    }
+}
+
 
 // ****************
 // ANIMATIONS
