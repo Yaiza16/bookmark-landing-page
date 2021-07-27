@@ -71,14 +71,10 @@ export default function imagesToggle(){
                     containerElements.description.classList.add('features-layout-inf__desc--fadeIn')
 
                     //Set up new title and description text
-
-
                     containerElements.title.innerHTML = elements[optionsImages.nextImage].title;
                         containerElements.description.innerHTML = elements[optionsImages.nextImage].description;
-                        containerElements.title.addEventListener('animationend', () =>{
                             containerElements.title.classList.remove('features-layout-inf__title--zoomIn')
                             containerElements.description.classList.remove('features-layout-inf__desc--fadeIn');
-                        })  
                 })
             }
         })
