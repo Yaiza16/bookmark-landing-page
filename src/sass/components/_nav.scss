@@ -36,6 +36,12 @@
         & .hamburger__line{
             background-color: v.$c-white;
         }
+
+        & .nav-menu__link{
+            @include m.mq(sm){
+                color: v.$c-white;
+            }
+        }
     }
 
     &--opened{
@@ -78,6 +84,7 @@
             justify-content: space-between;
             align-items: center;
             height: 100%;
+
             
             &__items{
                 display: flex;
