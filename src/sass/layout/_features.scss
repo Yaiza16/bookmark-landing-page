@@ -44,6 +44,7 @@
 
         @include m.mq(md){
             border: none;
+            padding: 1rem;
         }
 
         &:last-child{
@@ -100,14 +101,40 @@
 
 .features-layout{
     width: 100%;
+    @include m.mq(md){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 6.5rem;
+    }
+
+    @include m.mq(lg){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 9rem;
+    }
 }
 
 .features-layout-inf{
     margin-top: 5.5rem;
     text-align: center;
 
+    @include m.mq(md){
+        margin-top: unset;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+    }
+
     &__title{
         margin-bottom: 1rem;
+
+        @include m.mq(md){
+            margin-bottom: unset;
+        }
 
         &--zoomOut{
             @include m.animation-zoomOut;

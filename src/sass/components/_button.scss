@@ -1,5 +1,8 @@
 @use '../utilities/variables' as v;
 @use '../utilities/functions' as f;
+@use '../utilities/mixins' as m;
+
+
 
 .button{
     display: inline-block;
@@ -27,12 +30,18 @@
             color: v.$c-darkGrayishBlue;
             border-color: v.$c-darkGrayishBlue;
         }
-
     }
 
     &--login{
         background-color: transparent;
         border-color: v.$c-white;
         color: v.$c-white;
+    }
+
+    &--features{
+        display: none;
+        @include m.mq(md){
+            display: inline-block;
+        }
     }
 }
