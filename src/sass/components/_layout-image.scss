@@ -46,7 +46,8 @@
         &::before{
             left: -25px;
             right: 20%;
-            bottom: -40px;
+            left: f.toRem(-120);
+            bottom: -15%;
             border-radius: 0 50% 50% 0;
         }
     }
@@ -67,6 +68,11 @@
         bottom: 0px;
         background-color: v.$c-softBlue;
 
+        @include m.mq(lg){
+            left: f.toRem(-50);
+        }
     }
+
+
 }
 
