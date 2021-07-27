@@ -79,7 +79,13 @@
     color: v.$c-white;
 
     @include m.mq(sm){
-        display: none;
+        &--hidden{
+            display: none;
+        }
+
+        &--valid{
+            display: inline-block;
+        }
     }
 
     &--hidden{
