@@ -12,6 +12,12 @@
     @include m.animation-loadedPage-nav;
     animation: animation-loadedPage-nav 1s;
 
+    @include m.mq(sm){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     &--scrolled{
         padding-top: 1rem; padding-bottom: 1rem;
         position: fixed;
@@ -111,12 +117,15 @@
                 width: 100%;
                 text-align: center;
                 text-transform: uppercase;
+                background-color: transparent;
+                border-color: v.$c-white;
+                color: v.$c-white;
             }
 
             &__link{
                 color: v.$c-white;
-                text-transform: uppercase;
-                font-size: 1.2rem;
+                // text-transform: uppercase;
+                // font-size: 1.2rem;
 
             }
         }
@@ -149,6 +158,10 @@
     justify-content: space-between;
     cursor: pointer;
 
+    @include m.mq(sm){
+        display: none;
+    }
+
     &__line{
         width: 100%;
         height: 3px;
@@ -175,5 +188,40 @@
 // Menu
 .nav-menu{
     display: none;
+
+    @include m.mq(sm){
+        display: flex;
+
+        &__items{
+            display: flex;
+            gap: 2.5rem;
+        }
+    }
+
+    &__link{
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+
+        // font-size: 1rem;
+        color: v.$c-veryDarkBlue;
+        transition: all .3s ease;
+
+        &:hover{
+            color: v.$c-softRed;
+        }
+    }
+}
+
+.nav-menu-icons{
+    @include m.mq(sm){
+        display: none;
+    }
+}
+
+.nav-menu-main{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
