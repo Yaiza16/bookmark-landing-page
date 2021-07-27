@@ -14,6 +14,10 @@
 
 ## Overview
 
+### Links
+- Live Site URL: [Manage landing page](https://bookmark-landing-page-yv.netlify.app/)
+- Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/bookmark-landing-page-using-js-vanilla-sass-and-bem-b0ke-aojm)
+
 ### The challenge
   Your users should be able to:
 > - View the optimal layout for the site depending on their device's screen size
